@@ -4,3 +4,26 @@ Task 6
 
 Edited commit since the number of the task was wrong: git commit --amend -m "Adding Task 6"
 Source for code: https://help.github.com/articles/changing-a-commit-message/
+
+For task 7: had to create a new directory utilizing the $ git clone
+
+Command to look for: 
+git log -S "--no-mouse"
+And the no mouse command was at:
+
+commit c7e86ad4f1061b0cad9f64a6c9ad26f386bc1168
+Author: Junegunn Choi <junegunn.c@gmail.com>
+Date:   Thu Jan 30 15:41:44 2014 +0900
+
+    Add --no-mouse option to replace FZF_MOUSE_ENABLED
+But it took looking through a couple commands to see it.
+
+
+Task 8: git diff
+And git checkout
+
+
+Task 9: touch mistake.txt
+Git add mistake.txt
+Git commit -m "New mistakes file"
+Git push

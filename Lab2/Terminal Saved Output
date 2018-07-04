@@ -1,0 +1,79 @@
+Last login: Mon Jul  2 20:10:10 on ttys000
+Angels-MacBook-Pro:~ angeltoro15$ cd documents
+Angels-MacBook-Pro:documents angeltoro15$ cd github
+Angels-MacBook-Pro:github angeltoro15$ cd caap-cs
+Angels-MacBook-Pro:caap-cs angeltoro15$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   Lab0/README.txt
+	new file:   Lab0/test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	Lab0/.DS_Store
+	Lab1/.DS_Store
+	Lab2/
+	Lab3/
+	Lab4/
+	final_project/
+	hw1/
+	hw2/
+	hw3/
+
+Angels-MacBook-Pro:caap-cs angeltoro15$ cd lab1
+Angels-MacBook-Pro:lab1 angeltoro15$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   ../Lab0/README.txt
+	new file:   ../Lab0/test.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	../.DS_Store
+	../Lab0/.DS_Store
+	.DS_Store
+	../Lab2/
+	../Lab3/
+	../Lab4/
+	../final_project/
+	../hw1/
+	../hw2/
+	../hw3/
+
+Angels-MacBook-Pro:lab1 angeltoro15$ git commit
+
+# Your branch is up to date with 'origin/master'.
+#        
+# Changes to be committed:
+#       new file:   ../Lab0/README.txt
+#       new file:   ../Lab0/test.txt
+#            
+# Untracked files:
+#       ../.DS_Store
+#       ../Lab0/.DS_Store
+#       .DS_Store
+#       ../Lab2/
+#       ../Lab3/
+#       ../Lab4/
+#       ../final_project/
+#       ../hw1/
+#       ../hw2/
+#       ../hw3/
+#   
+
+Lab 1 updates:
+
+        Added README.txt
+        -Updated test.txt file
+-- INSERT --
