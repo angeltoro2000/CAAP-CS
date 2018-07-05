@@ -27,3 +27,13 @@ Task 9: touch mistake.txt
 Git add mistake.txt
 Git commit -m "New mistakes file"
 Git push
+, then used 
+Git log and git revert 78d0248823df40dbc4875f5efc6af39e3706d429 to delete the file, but it kept going me an error.
+
+
+Task 10:
+
+'git add/rm <file>' error message that appeared when trying to create number 10.
+
+
+
