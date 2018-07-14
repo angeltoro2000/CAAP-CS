@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+html{background: #999191;}
+ul#masthead li {
+  display:inline
+
+
+}
+#masthead{
+    color: white;
+    font-family: fantasy;
+    padding: inherit;
+}
+#Products{font-size: 50px;}
+
+#current{
+  font-size: 30px;
+}
+
+#nav li a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+#classic{
+  font-size: 30px;
+}
+
+#customizable{
+  font-size: 30px;
+}
+nav{border-style: dashed;
+}
+header{background: #911212;
+}
+
+ul#footer li {
+  display:inline;
+
+
+}
+#genimg{display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+#madrid2{width: 50%;
+    height: 600px;}
+  #clev1{}
+  #us1{height: 600px;}
+  #angel1{float: left;}
+  #me{height: 600px;}
+
+footer{background: #660000;}
+
+
+
+
+/* Last edit: 7/13/2018 11:00 PM */
+/* Last validated error free: 7/13/2018 11:00 PM */
+
+/*https://www.w3schools.com/html/default.asp, used this website for all commands I didn't know */
