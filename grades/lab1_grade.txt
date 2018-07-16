@@ -1,0 +1,44 @@
+Lab 1
+CAAP CMSC 101, Summer 2018
+
+Required Elements/Attributes
+  Correct use           1/3
+  Used all              3/3
+  Balanced amount       3/3 
+
+Semantic markup
+  Well structured hierarchies    15/20
+
+Correct use of directories/files
+  Links                 4/5 (* Missing link to contact in pic/caption *)
+  In docs directory     5/5 (* Can put styles in it's own directory *)
+  Git sites works       10/10
+
+Validation
+  Both pages and stylesheets  20/20
+
+Design/CSS
+  Dynamic screen size    3/5
+  Efficient use of CSS on multiple pages     10/10
+  Professional design in both pages  4/5
+  
+
+Code style
+  format         3/3 (* code looks good *)
+  clarity        2/3 (* logic is expressed clearly *)
+  decomposition  3/3 (* problems are factored into sensible subproblems *)
+  efficiency     1/2 (* blatant inefficiencies are avoided *)
+
+_total-score_  87/100
+
+graded by Jose Reyes
+
+Comments:
+- Very neat code!
+- all content should be in the <body>, nothing goes after it but the </html> tag.
+- Consider changing your stylesheets so no content is blokced by other content or images. 
+- Maybe adding more psace in the nav bar?
+- Your profile needs more content
+- You need to close all elements (except for very few like <img>), or you page can be very buggy. Fix your <ol> and <ul>
+    --> The profile.html page has a lot of bugs
+- Comment your code
