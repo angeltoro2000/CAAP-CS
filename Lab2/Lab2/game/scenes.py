@@ -1,6 +1,7 @@
 # imports random madule form library
 from random import randint
 
+
 # the base class for the scenes. 
 # Each scene has one variable name, and three functions: enter(), action(), and exit_scene(). 
 # Read through the ones given, feel free to add more using the same template I've given you.
@@ -12,140 +13,151 @@ class Scene(object):
 		print ("Subclass it and implement enter(), action(), and exit_scene() for each scene.")
 		exit(1)
 
-class CentralCorridor(Scene):
-	
-	name = raise ValueError ('todo')
+class oweek(Scene):
+
+	name='oweek-scene'
 
 	def enter(self):
-		print ("The Gothons of Planet Percal #25 have invaded your ship and destroyed")
-		raise ValueError ('todo')
+		print("It's 2018 and you are a freshman at the University of Chicago.\n You will be faced with decisions throughout this first quarter, some of them will harm you and others will benefit you. ")
+		print("If you make 5 wrong decisions your gpa will go lower than what is required for you to remain in the uniiversity and will be forced to drop out.")
 		return self.action()
+
+	def action(self):
+		print("It's O-week and your friend invited to a party.")
+		choice=int(input("1. Do you go to the party? \n 2. Do you decide to not go and tell him you rather stay home"))
+
+		if choice ==':q':
+			return self.exit_scene(choice)
+		try:
+			choice=int(choice)
+		except ValueError:
+			print("That's not a valid option, only ints allowed.")
+			return self.exit_scene(self.name)
+
+		if choice==1:
+			print("You go to the party, and your friend and you create a stronger bond.")
+		elif choice==2:
+			print("Your decision to not go out with your friend harmed your relationship")
+			print("You ask him for help in a homework another time and he says he rather do something else")
+			return self.exit_scene('death')
+
+		def exit_scene(self,outcome):
+
+			return outcome
+
+class studyingspace(Scene):
+	
+	name ='study space'
+
+	def enter(self):
+		print ("You procastinated and now only have one day to write your hum paper.  ")
+
+		return self.action()
+
 		
 		
 	def action(self):
-		print ("What will you do?")
-		raise ValueError ('todo')
-		choice = input("> ")
+		choice=int(input("1. stay in your house lounge despite all the distractions. \n 2. Go to the reg and finish your paper and then go hang out with your friends in the house lounge."))
+		if choice==1:
+			print("You were distracted by all your friends in the lounge and ended up submitting your paper 5 hours late.")
+			print("Being with your friends is not always the right decision")
+			return self.exit_scene('death')
+
+		elif choice==2:
+			print("You finished your paper and sill had enough time to hang out with your friends afterwards.")
+
+
 		if choice == ':q':
 			return self.exit_scene(choice)
-		# this is some exception handling, you don't need to worry about it, 
-		# just accept that it works and keeps the program from falling apart.
+
 		try:
 		   choice = int(choice)
 		except ValueError:
 		   print("That's not an int!")
 		   return self.exit_scene(self.name)
+		def exit_scene(self,outcome):
+			return outcome
 
-		if int(choice) == 1:
-			print ("Quick on the draw you yank out your blaster and fire it at the Gothon.")
-			raise ValueError ('todo')
-			return self.exit_scene('death') # raise ValueError ('todo')
-		elif int(choice) == 2:
-			print ("Like a world class boxer you dodge, weave, slip and slide right")
-			raise ValueError ('todo')
-			return self.exit_scene('death') # raise ValueError ('todo')
-		elif int(choice) == 3:
-			print ("Lucky for you they made you learn Gothon insults in the academy.")
-			raise ValueError ('todo')
-			return self.exit_scene('laser_weapon_armory') # raise ValueError ('todo')
-		else:
-			print ("DOES NOT COMPUTE! Choose an option or type :q to end game") # raise ValueError ('todo')
+class compsci(Scene):
+
+	name = 'compsci-scene'
+
+	def enter(self):
+		print("You have a group project with other classmates for computer science. The way it will be graded is you will all write a game but only one will be graded.")
+		return self.action()
+
+	def action(self):
+		choice = int(input("1. Do you make sure your code is perfect \n 2. Do you make sure that you and all your teammates know what they are doing and can submit a functional code?"))
+
+
+		try:
+			choice = int(choice)
+
+		except ValueError:
+			print("That's not a valid option, only ints allowed.")
 			return self.exit_scene(self.name)
 
-	def exit_scene(self, outcome):
-		return outcome
+		if choice == 1:
+			print("You had a perfect code, but yours was not the one graded. \n Instead your teammates was the one graded and he didn't do anything.")
+		elif choice == 2:
+			print("All of your team submitted a code that worked, and although, yours wasn't graded you still got an A because you helped your teammates. ")
+			print("You ask him for help in a homework another time and he says he rather do something else")
 
-class LaserWeaponArmory(Scene):
-	
-	name = raise ValueError ('todo')
-
-	def enter(self):
-		print ("You do a dive roll into the Weapon Armory, crouch and scan the room")
-		raise ValueError ('todo')
-		return raise ValueError ('todo')
-
-	def action(self):
-		print ("There's a keypad lock on the box")
-		raise ValueError ('todo')
-		code = [randint(0,9), randint(0,9), randint(0,9)]
-		guesses = 0
-		# loop to check three random integers, one at a time
-		for i in range(3):
-			print ("Enter digit %d." % (i+1))
-			guess = input("[keypad]> ")
-			if guess == ':q':
-				return self.exit_scene(guess)
-			try:
-			   guess = int(guess)
-			except ValueError:
-			   print("That's not an int!")
-			   return self.exit_scene(self.name)
-			while int(guess) != code[i] and guesses <10:
-				print ("BZZZZEDDD!")
-				guesses += 1
-				guess =input("[keypad]> ")
-				if guess == ':q':
-					return self.exit_scene(guess)
-				try:
-				   guess = int(guess)
-				except ValueError:
-				   print("That's not an int!")
-				   guess = -1
-		
-		if guesses < 10:
-			print ("The container clicks open and the seal breaks, letting gas out.")
-			raise ValueError ('todo')
-			return self.exit_scene('the_bridge')
-		else:
-			print ("The lock buzzes one last time and then you hear a sickening")
-			raise ValueError ('todo')
-			return self.exit_scene('death') # raise ValueError ('todo')
-
-	def exit_scene(raise ValueError ('todo')):
-		return raise ValueError ('todo')
-			
-class TheBridge(Scene):
-	
-	name ='the_bridge'
-
-	def enter(self):
-		raise ValueError ('todo')
-	
-	def action(self):
-		raise ValueError ('todo')
-
-	def exit_scene(self, outcome):
-		raise ValueError ('todo')
-
-class EscapePod(Scene):
-	
-	name = 'escape_pod'
-
-	def enter(self):
-		raise ValueError ('todo')
-
-
-	def action(self):
-		print ("There's 5 pods, which one do you take?")
-		good_pod = randint(1,5)
-		guess = input("[pod #]> ")
-
-		if guess == ':q':
-			return self.exit_scene(guess)
-		try:
-		   guess = int(guess)
-		except ValueError:
-		   print("That's not an int!")
-		   return self.exit_scene(self.name)
-		   
-		if int(guess) != good_pod:
-			print ("You jump into pod %s and hit the eject button."% guess)
-			raise ValueError ('todo')
 			return self.exit_scene('death')
-		else:
-			print ("You jump into pod %s and hit the eject button."% guess)
-			raise ValueError ('todo')
-			return self.exit_scene('finished')
+
+		def exit_scene(self, outcome):
+				return outcome
+
+class food(Scene):
+
+	name='food-scene'
+
+	def enter(self):
+		print("You have a midterm at 4:00 pm. You feel hungry but are not sure whether you should get lunch or wait until after the midterm to eat.")
+		return self.action()
+
+	def action(self):
+		choice=int(input("1. Get food \n 2. Stay studying and eat later."))
+
+		try:
+			choice=int(choice)
+		except ValueError:
+			print("That's not a valid option, only ints allowed.")
+			return self.exit_scene(self.name)
+
+		if choice==1:
+			print("You got food and where well rested for you midterms, your grade was a solid A-")
+		elif choice==2:
+			print("You stayed studying but passed out at around 3 from hunger. You coudn't make the test and failed a test that you knew the material for.")
+
+			return self.exit_scene('death')
 
 	def exit_scene(self, outcome):
-		raise ValueError ('todo')
+			return outcome
+
+class finals(Scene):
+	name='final-scene'
+
+	def enter(self):
+		print("You are finally done with your first semester of college, just one more challenge before you can get back home for the break.")
+		if __name__ == '__main__':
+			return self.action()
+	def action(self):
+		print("You receive the opportunity to work on a really good internship but it would require a 40 hour commitment from you starting the week before finals.")
+		choice=int(input("Do you take it? \n 1. Yes. \n 2. No"))
+
+		try:
+			choice=int(choice)
+		except ValueError:
+			("That's not a valid option. Only ints allowed.")
+			return self.exit_scene(self.name)
+
+		if choice==1:
+			print("Congrats you have a new internship but due to the time you were spending there instead of studying for finals, you failed a class")
+			return self.exit_scene('death')
+
+		elif choice==2:
+			print("Although, you don't have the internship this mature decision allowed you to excel on your classes and ace your finals.")
+
+		def exit_scene(self, outcome):
+			return outcome
