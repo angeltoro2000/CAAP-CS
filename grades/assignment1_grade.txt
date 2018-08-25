@@ -8,12 +8,11 @@ Assignment 1 Grade:
 5. Fibonacci Sequence: 6/6 pts
 6. Part 2 - Change: 20/20 pts
 7. Part 4 - 0/10 pts
-	--> Corrupted file. Can't open it. -10 pts.
+	--> Corrupted file. Can't open it. 10 pts.
 
 Readme File: -5 pts. 
 	--> ok readme but still needs more instructions
 
-44/60 Points total
+54/60 Points total
 
 Notes:
---> Re-upload your pdf and I'll regrade part 4.
